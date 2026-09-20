@@ -1,43 +1,16 @@
-# BanTogg
-# BanTogg
+# React + Vite
 
-BanTogg est une application mobile conçue pour répondre à une question simple du quotidien :
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-> **« On mange quoi aujourd’hui ? »**
+Currently, two official plugins are available:
 
-L’application aide à trouver rapidement une idée de repas à partir des ingrédients disponibles à la maison.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Objectif
+## React Compiler
 
-BanTogg vise à simplifier la décision quotidienne autour des repas, en proposant des plats adaptés à ce que l’utilisateur possède déjà.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Fonctionnalités
+## Expanding the Oxlint configuration
 
-- Sélection des ingrédients disponibles
-- Suggestions de plats sénégalais
-- Suggestions alternatives
-- Historique des repas proposés
-- Interface simple et accessible
-- Préparation des plats via des ressources externes
-
-## Technologies
-
-- Flutter
-- Dart
-
-## Statut
-
-Projet en cours de développement.
-
-La première version est destinée à être testée auprès d'utilisateurs avant une éventuelle publication sur les stores.
-
-## À venir
-
-- Planification des repas sur la semaine
-- Personnalisation des suggestions
-- Liste de courses
-- Version Android et iOS
-
----
-
-**BanTogg — Simplifier la question : « On mange quoi aujourd’hui ? »**
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
