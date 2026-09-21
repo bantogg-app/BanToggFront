@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://bantoggback-production.up.railway.app'
+    baseURL: 'https://bantoggback-production.up.railway.app/api'
 });
 
 export const suggererRepas = async (proteines, typeRepas, deviceId) => {
