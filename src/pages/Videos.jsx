@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 function Videos() {
@@ -5,8 +6,13 @@ function Videos() {
     const navigate = useNavigate();
     const repas = location.state?.repas;
 
+    useEffect(() => {
+        if (!repas) {
+            navigate('/');
+        }
+    }, [repas, navigate]);
+
     if (!repas) {
-        navigate('/');
         return null;
     }
 
@@ -20,11 +26,12 @@ function Videos() {
 
     return (
         <div className="page">
-           <button className="back-btn" onClick={() => navigate('/resultat', { state: { proteines: repas.proteines, typeRepas: repas.typeRepas } })}>←</button>
+            <button className="back-btn" onClick={() => navigate('/resultat', { state: { proteines: repas.proteines, typeRepas: repas.typeRepas } })}>←</button>
             <h1>Tu veux voir comment le préparer ?</h1>
             <p className="subtitle-orange">{repas.nom}</p>
+           
             {videos.map((v, i) => (
-                
+                <a 
                     key={i}
                     href={v.url || '#'}
                     target="_blank"
