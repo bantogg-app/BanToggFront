@@ -4,7 +4,7 @@ import Ingredients from './pages/Ingredients';
 import TypeRepas from './pages/TypeRepas';
 import Resultat from './pages/Resultat';
 import MesRepas from './pages/MesRepas';
-import Videos from './pages/video';
+import Videos from './pages/Videos';
 
 function App() {
     return (
