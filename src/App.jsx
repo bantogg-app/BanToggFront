@@ -4,6 +4,7 @@ import Ingredients from './pages/Ingredients';
 import TypeRepas from './pages/TypeRepas';
 import Resultat from './pages/Resultat';
 import MesRepas from './pages/MesRepas';
+import Videos from './pages/video';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/type-repas" element={<TypeRepas />} />
                 <Route path="/resultat" element={<Resultat />} />
                 <Route path="/mes-repas" element={<MesRepas />} />
+                <Route path="/videos" element={<Videos/>} />
             </Routes>
         </BrowserRouter>
     );
