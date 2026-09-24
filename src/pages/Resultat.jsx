@@ -62,7 +62,7 @@ function Resultat() {
             <div className="resultat-nom">{repas.nom}</div>
             <div className="resultat-ingredients">{repas.ingredients?.join(' · ')}</div>
             <button className="btn-primary" onClick={jeCuisineCa}>Je cuisine ça</button>
-            <button className="btn-secondary" onClick={chargerSuggestion}>🔄 Une autre idée</button>
+            <button className="btn-secondary" onClick={chargerSuggestion}> <img src="/restart.png" alt="repas" className="icon-img" /><span>Une autre idée</span></button>
             <button className="btn-secondary" onClick={() => navigate('/videos', { state: { repas } })}>
                 Voir comment le préparer
             </button>

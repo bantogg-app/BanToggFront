@@ -39,7 +39,7 @@ function Videos() {
                     className="video-card"
                     style={{ textDecoration: 'none', color: 'inherit' }}
                 >
-                    <div className="video-thumb">▶️</div>
+                    <div className="video-thumb"><img src="/video.png" alt="video" className="icon-img" /></div>
                     <div className="video-info">
                         <div className="video-titre">{v.titre}</div>
                         <div className="video-source">{v.source} · {v.duree}</div>
@@ -52,3 +52,4 @@ function Videos() {
 }
 
 export default Videos;
+    
