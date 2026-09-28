@@ -4,7 +4,7 @@ import BottomNav from '../components/BottomNav';
 function Accueil() {
     const navigate = useNavigate();
 
-    return (z
+    return (
         <div className="page">
             <div className="accueil-image" />
             <h1>On mange quoi aujourd'hui ?</h1>
