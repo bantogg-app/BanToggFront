@@ -5,7 +5,7 @@ const CATEGORIES = [
     { value: 'poisson', label: 'Poisson' },
     { value: 'poulet', label: 'Poulet' },
     { value: 'viande', label: 'Viande' },
-    { value: 'non_proteine', label: 'Autre' },
+    { value: 'non_proteine', label: 'Sans protéine' },
 ];
 
 function Ingredients() {
